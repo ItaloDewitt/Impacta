@@ -2,10 +2,7 @@
 
   if(isset($_POST['submit']))
   {
-    // print_r($_POST['nome']);
-    // print_r($_POST['genero']);
-    // print_r($_POST['data_entrada']);
-
+    
     include_once('config.php');
 
     $nome = $_POST['nome'];
@@ -129,39 +126,11 @@
           <input type="text" name="genero" id="genero" class="inputUser" required>
           <label for="genero" class="labelInput">Gênero</label>
         </div>
-        <!-- <br><br>
-        <div class="inputBox">
-          <input type="tel" name="telefone" id="telefone" class="inputUser" required>
-          <label for="telefone" class="labelInput">Telefone</label>
-        </div> -->
-        <!-- <p>Condição:</p>
-        <input type="radio" id="novo" name="condi" value="novo" required>
-        <label for="novo">Novo</label>
-        <br>
-        <input type="radio" id="usado" name="condi" value="usado" required>
-        <label for="usado">Usado</label> -->
-        <!-- <br>
-        <input type="radio" id="outro" name="condi" value="outro" required>
-        <label for="outro">Outro</label> -->
         <br><br>
         <label for="data_entrada"><b>Data de Entrada:</b></label>
         <input type="date" name="data_entrada" id="data_entrada" required>
         <br><br><br>
-        <!-- <div class="inputBox">
-          <input type="text" name="cidade" id="cidade" class="inputUser" required>
-          <label for="cidade" class="labelInput">Cidade</label>
-        </div>
-        <br><br>
-        <div class="inputBox">
-          <input type="text" name="estado" id="estado" class="inputUser" required>
-          <label for="estado" class="labelInput">Estado</label>
-        </div>
-        <br><br>
-        <div class="inputBox">
-          <input type="text" name="endereco" id="endereco" class="inputUser" required>
-          <label for="endereco" class="labelInput">Endereço</label>
-        </div>
-        <br><br> -->
+        
         <input type="submit" name="submit" id="submit">
       </fieldset>
     </form>
