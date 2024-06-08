@@ -13,9 +13,10 @@
     $data_entrada = $_POST['data_entrada'];
     $condicao = $_POST['condicao'];
     $editora = $_POST['editora'];
+    $idioma = $_POST['idioma'];
 
-    $result = mysqli_query($conexao, "INSERT INTO livros(nome,genero,data_entrada,condicao,editora) 
-    VALUES ('$nome','$genero','$data_entrada','$condicao','$editora')");
+    $result = mysqli_query($conexao, "INSERT INTO livros(nome,genero,data_entrada,condicao,editora,idioma) 
+    VALUES ('$nome','$genero','$data_entrada','$condicao','$editora','$idioma')");
 
 
   }
@@ -137,9 +138,6 @@
         <br>
         <input type="radio" id="usado" name="condicao" value="usado" required>
         <label for="usado">Usado</label>
-        <!-- <br>
-        <input type="radio" id="outro" name="condi" value="outro" required>
-        <label for="outro">Outro</label> -->
         <br><br>
         <label for="data_entrada"><b>Data de Entrada:</b></label>
         <input type="date" name="data_entrada" id="data_entrada" required>
@@ -149,12 +147,12 @@
           <label for="editora" class="labelInput">Editora</label>
         </div>
         <br><br>
-        <!-- <div class="inputBox">
-          <input type="text" name="cidade" id="cidade" class="inputUser" required>
-          <label for="cidade" class="labelInput">Cidade</label>
+        <div class="inputBox">
+          <input type="text" name="idioma" id="idioma" class="inputUser" required>
+          <label for="idioma" class="labelInput">Idioma</label>
         </div>
         <br><br>
-        <div class="inputBox">
+        <!-- <div class="inputBox">
           <input type="text" name="estado" id="estado" class="inputUser" required>
           <label for="estado" class="labelInput">Estado</label>
         </div>
